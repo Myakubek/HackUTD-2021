@@ -1,4 +1,4 @@
-# HackUTD-2021
+# HackUTD VIII Blast From The Past 2021
 ![](https://github.com/Myakubek/HackUTD-2021/blob/main/HackUTD.jpg)
 
 ## Members
