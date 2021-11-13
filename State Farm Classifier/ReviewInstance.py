@@ -1,8 +1,8 @@
 #Class to create an instance of reviews
-
-#String Review
-#String Reviewer's name
-#String date of review
-#float sentiment value
-#float membership length
-#String insurance policy
+class Review:
+  String review
+  String reviewerName
+  String date
+  float sentimentVal
+  float memberLength
+  string policy
