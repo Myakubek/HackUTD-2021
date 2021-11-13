@@ -10,3 +10,23 @@ class Review:
     self.memberLength = memberLength
     self.policy = policy
     self.policyType = policyType
+
+  def getReview(self):
+    return self.review
+
+  def getName(self):
+    return self.name
+
+  def getDate(self):
+    return self.date
+
+  def getMemberLength(self):
+    return self.memberLength
+
+  def getPolicy(self):
+    return self.policy
+
+  def getPolicyType(self):
+    return self.policyType
+
+  
