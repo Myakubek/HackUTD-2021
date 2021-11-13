@@ -1,4 +1,3 @@
-#Sentiment analyzer testbench
 import SentimentAnalyzer as sa
 
 #Class to create an instance of reviews
