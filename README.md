@@ -12,3 +12,6 @@ Your challenge is to identify and build out a new tech product or service State 
 
 ## Dependencies
 ![Natural Language Toolkit](https://www.nltk.org/install.html)
+```python
+pip install nltk
+```
