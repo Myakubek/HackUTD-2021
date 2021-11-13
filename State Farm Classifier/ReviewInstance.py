@@ -1,8 +1,9 @@
 #Class to create an instance of reviews
 class Review:
-  String review
-  String reviewerName
-  String date
+  review
+  reviewerName
+  date
   flo sentimentVal
   flo memberLength
-  string policy
+  policy
+  policyType
