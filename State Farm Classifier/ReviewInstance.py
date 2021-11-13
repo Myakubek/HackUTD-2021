@@ -3,6 +3,6 @@ class Review:
   String review
   String reviewerName
   String date
-  float sentimentVal
-  float memberLength
+  flo sentimentVal
+  flo memberLength
   string policy
