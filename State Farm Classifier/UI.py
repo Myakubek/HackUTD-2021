@@ -1,5 +1,6 @@
 # Python program to create a table
 from tkinter import *
+from CSVreader import readCSV
 
 class Table:
     def __init__(self, lst):

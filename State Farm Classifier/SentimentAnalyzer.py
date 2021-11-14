@@ -11,8 +11,9 @@ class sentimentAnalyzer:
     #Function to convert a list to string for stopword formatting/conversion
     def __init__(self, text):
         self.text = text
-        self.negative = self.getNegative(text)
-        self.positive = self.getPositive(text)
+        #self.negative = self.getNegative(text)
+        #self.positive = self.getPositive(text)
+        self.sentimentScore = self.getSentiment(text)
 
     def listToString(self, string):
         str = ""
@@ -39,8 +40,14 @@ class sentimentAnalyzer:
 
 
     def getNegative(self, text):
-        return (format(self.analyze(text).get('neg')*100, '.1f') + '%')
+        return (format(self.analyze(text).get('neg') * 100, '.1f'))
 
 
     def getPositive(self, text):
-        return (format(self.analyze(text).get('pos')*100, '.1f') + '%')
+        return (format(self.analyze(text).get('pos') * 100, '.1f'))
+
+    def getSentiment(self, text):
+        if float(self.getPositive(text)) > float(self.getNegative(text)):
+            return (format(self.analyze(text).get('pos')*100, '.1f') + '%')
+        else:
+            return ('-' + format(self.analyze(text).get('neg') * 100, '.1f') + '%')
