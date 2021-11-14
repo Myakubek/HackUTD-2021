@@ -1,8 +1,30 @@
 from CSVreader import readCSV
-import pprint as pp
 reviews = readCSV('Reviews.xlsx')
 
-#print(vars(reviews[0]))
+def printReviews(lst):
+    for i in lst:
+        print('Name:', i.name, '   Date:', i.date, '   Member for', i.memberLength, 'days')
+        print('Policy', i.policy, '   Policy Type:', i.policyType, '   Feedback positivity', i.sentimentVal)
+        print ("Review: ", i.review)
+        print()
+
+
+pos = []
+neg = []
+
 for i in reviews:
-    pp.pprint(vars(i))
+    if i.sentimentVal[0] == '-':
+        neg.append(i)
+    else:
+        pos.append(i)
+
+print("---Positive values---")
+printReviews(pos)
+print()
+
+print("---Negative values--")
+printReviews(neg)
+
+
+
 
