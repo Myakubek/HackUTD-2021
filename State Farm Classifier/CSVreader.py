@@ -38,3 +38,6 @@ policyList = [vehicleList, homeList, lifeList, healthList, smallBusinessList]
             healthList.append(post)
         if (post.policy = "Small Business"):
             smallBusinessList.append(post)
+        
+        
+            
