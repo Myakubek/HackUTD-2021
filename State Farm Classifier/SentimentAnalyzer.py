@@ -3,9 +3,9 @@ import nltk
 import nltk.data
 from nltk.sentiment import SentimentIntensityAnalyzer
 import matplotlib.pyplot as plt
-nltk.download('punkt')
-nltk.download('vader_lexicon')
-nltk.download('stopwords')
+nltk.download('punkt', quiet = True)
+nltk.download('vader_lexicon', quiet = True)
+nltk.download('stopwords', quiet = True)
 
 class sentimentAnalyzer:
     #Function to convert a list to string for stopword formatting/conversion
