@@ -11,13 +11,10 @@ class sentimentAnalyzer:
     #Function to convert a list to string for stopword formatting/conversion
     def __init__(self, text):
         self.text = text
-        #self.negative = self.getNegative(text)
-        #self.positive = self.getPositive(text)
         self.sentimentScore = self.getSentiment(text)
 
     def listToString(self, string):
         str = ""
-        #Loop and add each element of list
         for s in string:
             str += s
             str += " "

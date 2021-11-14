@@ -1,8 +1,8 @@
 from CSVreader import readCSV
-import UI
+import pprint as pp
 reviews = readCSV('Reviews.xlsx')
 
 #print(vars(reviews[0]))
 for i in reviews:
-    print(vars(i))
+    pp.pprint(vars(i))
 
