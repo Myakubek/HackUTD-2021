@@ -2,14 +2,14 @@ import SentimentAnalyzer as sa
 
 #Class to create an instance of reviews
 class Review:
-  def __init__(self, review, name, date, memberLength, policy, policyType):
-    self.review = review
-    self.name = name
-    self.date = date
-    self.sentimentVal = sa.sentimentAnalyzer(review)
-    self.memberLength = memberLength
-    self.policy = policy
-    self.policyType = policyType
+  def __init__(self, list):
+    self.review = list[0]
+    self.name = list[1]
+    self.date = list[2]
+    self.sentimentVal = sa.sentimentAnalyzer(list[0])
+    self.memberLength = list[3]
+    self.policy = list[4]
+    self.policyType = list[5]
 
   def getReview(self):
     return self.review
