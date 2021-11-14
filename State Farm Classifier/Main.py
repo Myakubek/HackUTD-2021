@@ -18,11 +18,11 @@ for i in reviews:
     else:
         pos.append(i)
 
-print("---Positive values---")
+print("---Positive Feedback---")
 printReviews(pos)
 print()
 
-print("---Negative values--")
+print("---Negative Feedback--")
 printReviews(neg)
 
 
