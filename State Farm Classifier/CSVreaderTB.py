@@ -4,4 +4,6 @@ import CSVreader as cr
 
 
 df = cr.readCSV('Reviews.xlsx')
-print(df[0].review)
+for i in df:
+    print(i.review)
+    print(i.date)
