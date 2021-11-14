@@ -15,7 +15,6 @@ Your challenge is to identify and build out a new tech product or service State 
 [Pandas](https://pandas.pydata.org/)
 
 ## Solution
-Our program takes reviews of customers and uses text classification to determine the positive and negative sentiment.  
-Reviews are cleaned of neutral words and and machine learning algorithm is applied to determine the overall positive or negative tone of the customer. Based on how much more positive or negative a review is it will get classified as a positive or negative review. This information is returned along with all relevant information of the client such as their name, date of review, member duration, their policy, policy type, and review.
+Our program provides the foundation for a more efficient and refined customer feedback system. After customers answer a few simple questions and write about their experience, the program sorts out the reviews by policy and uses a text classification algorithm to automatically detects how positive or negative they are, grouped and ready in one place for the team that's best equipped to solve them. Reviews are cleaned of neutral words and and machine learning algorithm is applied to determine the overall positive or negative tone of the customer. Based on how much more positive or negative a review is it will get classified as a positive or negative review. This information is returned along with all relevant information of the client such as their name, date of review, member duration, their policy, policy type, and review.
 
 ![](https://github.com/Myakubek/HackUTD-2021/blob/main/Output.PNG)
