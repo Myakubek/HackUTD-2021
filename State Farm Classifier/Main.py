@@ -4,7 +4,7 @@ reviews = readCSV('Reviews.xlsx')
 def printReviews(lst):
     for i in lst:
         print('Name:', i.name, '   Date:', i.date, '   Member for', i.memberLength, 'days')
-        print('Policy', i.policy, '   Policy Type:', i.policyType, '   Feedback positivity', i.sentimentVal)
+        print('Policy:', i.policy, '   Policy Type:', i.policyType, '   Feedback positivity:', i.sentimentVal)
         print ("Review: ", i.review)
         print()
 

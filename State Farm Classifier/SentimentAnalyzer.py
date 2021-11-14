@@ -45,6 +45,6 @@ class sentimentAnalyzer:
 
     def getSentiment(self, text):
         if float(self.getPositive(text)) > float(self.getNegative(text)):
-            return (format(self.analyze(text).get('pos')*100, '.1f') + '%')
+            return str(float(self.getPositive(text)) - float(self.getNegative(text))) + '%'
         else:
-            return ('-' + format(self.analyze(text).get('neg') * 100, '.1f') + '%')
+            return str(float(self.getPositive(text)) - float(self.getNegative(text))) + '%'
