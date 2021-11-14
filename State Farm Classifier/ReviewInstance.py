@@ -29,4 +29,3 @@ class Review:
   def getPolicyType(self):
     return self.policyType
 
-  

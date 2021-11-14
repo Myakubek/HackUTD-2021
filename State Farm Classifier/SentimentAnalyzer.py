@@ -22,7 +22,6 @@ class sentimentAnalyzer:
             str += " "
         return str
 
-
     #Gets a string, splits into a list and filters out stopwards, returns formatted string
     def removeStopwords(self, Text):
         Text = Text.split(" ")                                  #Split text into seperated list
